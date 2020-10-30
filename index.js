@@ -84,7 +84,7 @@ function startTimer() {
   timer = setInterval(function() {
     timeRemaining --;
     //If no time remaining end the game
-    if (timeRemaining == 0) endGame();
+    if (timeRemaining === 0) endGame();
     id("timer").textContent = timeConversion(timeRemaining);
   }, 1000)
 }
